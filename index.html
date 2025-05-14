@@ -1,74 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Digital CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: #fff;
-            padding: 25px;
-            max-width: 800px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        hr {
-            border: 1px solid #ddd;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "• ";
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flynn Greenlee – Digital CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background-color: #fff;
+      padding: 25px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    hr {
+      border: 1px solid #ddd;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "• ";
+      color: #555;
+    }
+    footer p {
+      font-style: italic;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Flynn Greenlee</h1>
-        <p><strong>Email:</strong> Sgreenlee2022@gmail.com </p>
-        <p><strong>Phone:</strong> 410-804-3451</p>
-        <p><strong>Location:</strong> Edgewater, Maryland </p>
+  <main class="container">
+    <h1>Flynn Greenlee</h1>
+    <p><strong>Email:</strong> Sgreenlee2022@gmail.com</p>
+    <p><strong>Phone:</strong> 410-804-3451</p>
+    <p><strong>Location:</strong> Edgewater, Maryland</p>
 
-        <hr>
+    <hr />
 
-        <h2>Education</h2>
-        <p><strong>South River Highschool</strong> – Edgewater, Maryland</p>
-        <p>2019 – 2022</p>
-        <ul>
-            <li>Subjects: Math, Science, English, History, etc.</li>
-            <li>Achievements: Honor Roll</li>
-        </ul>
+    <section>
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>School</th>
+            <th>Location</th>
+            <th>Years</th>
+            <th>Highlights</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>South River High School</td>
+            <td>Edgewater, Maryland</td>
+            <td>2019 – 2022</td>
+            <td>Honor Roll, Math, Science, English, History</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, Photoshop, unity, and blender</li>
-            <li>Microsoft Word, PowerPoint</li>
-            <li>Teamwork and Communication</li>
-        </ul>
+    <section>
+      <h2>Skills</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Technical</td>
+            <td>HTML, Photoshop, Unity, Blender</td>
+          </tr>
+          <tr>
+            <td>Productivity</td>
+            <td>Microsoft Word, PowerPoint</td>
+          </tr>
+          <tr>
+            <td>Soft Skills</td>
+            <td>Teamwork, Communication</td>
+          </tr>
+        </tbody>
+      </table>
+      <footer>
+        <p>Continuously learning and expanding skillset through hands-on projects and collaboration.</p>
+      </footer>
+    </section>
 
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Website Project:</strong> Created a basic website using HTML for a class project</li>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Website Project:</strong> Built a multi-page responsive website using HTML and CSS for a class assignment.</li>
+      </ul>
+    </section>
 
-        </ul>
-
-        <h2>Interests</h2>
-        <ul>
-            <li>Manga</li>
-            <li>Gaming</li>
-            <li>Coding</li>
-        </ul>
-    </div>
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Manga</li>
+        <li>Gaming</li>
+        <li>Coding</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
