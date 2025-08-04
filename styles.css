@@ -1,0 +1,119 @@
+
+/* ===== General Reset and Font Setup ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* ===== Container Styling ===== */
+.container {
+    background-color: #ffffff;
+    padding: 25px;
+    max-width: 850px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Profile Image ===== */
+.profile-img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ===== Headings ===== */
+h1, h2 {
+    color: #005f73;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+
+/* ===== Table Styling ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #caf0f8;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ===== Links ===== */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* ===== Lists ===== */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li::before {
+    content: "• ";
+    color: #0077cc;
+}
+
+/* ===== Form Styling ===== */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* ===== Submit Button ===== */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0096c7;
+}
