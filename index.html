@@ -9,82 +9,95 @@
 <body>
     <div class="container">
         <img src="Flynn selfie.jpg" alt="Flynn Greenlee" class="profile-img"/>
+
         <h1>Flynn Greenlee</h1>
         <p><strong>Email:</strong> Sgreenlee2022@gmail.com</p>
         <p><strong>Phone:</strong> 410-804-3451</p>
         <p><strong>Location:</strong> Edgewater, Maryland</p>
         <hr>
 
-        <h2>Education</h2>
-        <p><strong>South River High School</strong> – Edgewater, Maryland</p>
-        <p>2019 – 2022</p>
-        <ul>
-            <li>Subjects: Math, Science, English, History, etc.</li>
-            <li>Achievements: Honor Roll</li>
-        </ul>
+        <section>
+            <h2>Education</h2>
+            <p><strong>South River High School</strong> – Edgewater, Maryland</p>
+            <p>2019 – 2022</p>
+            <ul>
+                <li>Subjects: Math, Science, English, History</li>
+                <li>Achievements: Honor Roll</li>
+            </ul>
+        </section>
 
-        <h2>Skills</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Technical</th>
-                    <th>Software</th>
-                    <th>Soft Skills</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML, Photoshop, Unity, Blender</td>
-                    <td>Microsoft Word, PowerPoint</td>
-                    <td>Teamwork, Communication</td>
-                </tr>
-            </tbody>
-        </table>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technical</th>
+                        <th>Software</th>
+                        <th>Soft Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML, Photoshop, Unity, Blender</td>
+                        <td>Microsoft Word, PowerPoint</td>
+                        <td>Teamwork, Communication</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Website Project:</strong> Created a basic website using HTML for a class project.</li>
-        </ul>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Website Project:</strong> Built a multi-page responsive website using HTML and CSS for a class assignment.</li>
+            </ul>
+        </section>
 
-        <h2>Interests</h2>
-        <ul>
-            <li>Manga</li>
-            <li>Gaming</li>
-            <li>Coding</li>
-        </ul>
+        <section>
+            <h2>Interests</h2>
+            <ul>
+                <li>Manga</li>
+                <li>Gaming</li>
+                <li>Coding</li>
+            </ul>
+        </section>
 
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Your full name"><br>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="example@email.com"><br>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890"><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Optional">
 
-            <label for="organization">Organization:</label>
-            <input type="text" id="organization" name="organization" placeholder="Company or School"><br>
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization" placeholder="Company or institution name">
 
-            <label for="role">Your Role:</label>
-            <input type="text" id="role" name="role" placeholder="Student, Recruiter, etc."><br>
+                <label for="role">Your Role</label>
+                <input type="text" id="role" name="role" placeholder="e.g., Recruiter, Developer">
 
-            <label for="reason">Reason for Contact:</label>
-            <select id="reason" name="reason">
-                <option value="job">Job Offer</option>
-                <option value="collab">Collaboration</option>
-                <option value="feedback">Feedback</option>
-            </select><br>
+                <label for="reason">Reason for Contact *</label>
+                <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Select a reason</option>
+                    <option value="job">Job Opportunity</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
 
-            <label for="contact-method">Preferred Contact Method:</label>
-            <input type="text" id="contact-method" name="contact-method" placeholder="Email, Phone, etc."><br>
+                <label for="contactMethod">Preferred Contact Method</label>
+                <input type="text" id="contactMethod" name="contactMethod" placeholder="e.g., Email, Phone">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea><br>
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
 
-            <button type="submit">Send</button>
-        </form>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </div>
 </body>
 </html>
