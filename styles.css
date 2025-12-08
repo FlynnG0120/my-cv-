@@ -1,129 +1,68 @@
-
-/* =================== Global Reset and Box Model Setup =================== */
+/* ===== Reset CSS ===== */
 * {
-    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* =================== Body Styling =================== */
-body {
-    margin: 20px;
+/* ===== Header Layout Using Flexbox ===== */
+.header {
+    display: flex;
+    justify-content: space-between; /* space left, center, right */
+    align-items: center;
     padding: 20px;
-    border: 5px solid #bde0fe;
-    background-color: #f0f8ff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    border-bottom: 2px solid #ddd;
+    position: relative;
 }
 
-/* =================== Container Styling =================== */
-.container {
-    background-color: #ffffff;
-    padding: 25px;
-    max-width: 850px;
-    margin: 20px auto;
-    border: 3px solid #90e0ef;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-/* =================== Profile Image =================== */
-.profile-img {
-    display: block;
-    margin: 0 auto 20px;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid #00b4d8; /* Added border */
+/* Profile picture in top-left with perfect circle */
+.profile-pic {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
+    border-radius: 50%; /* Makes image round */
+    border: 3px solid #555;
 }
 
-/* =================== Headers =================== */
-h1, h2 {
-    color: #005f73;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 10px; /* Adds spacing below headers */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
-}
-
-/* =================== Section Styling =================== */
-section {
-    margin: 25px 0;
-    padding: 15px;
-    border: 2px solid #caf0f8;
-    border-radius: 8px;
-    background-color: #f9fdff;
-}
-
-/* =================== Table Styling =================== */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-thead {
-    background-color: #caf0f8;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-/* =================== Lists =================== */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li::before {
-    content: "• ";
-    color: #0077cc;
-}
-
-/* =================== Form Styling =================== */
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-top: 15px;
+/* Center name using absolute + flexbox combo */
+.name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    font-size: 1em;
-    outline: none; /* Removes outline for cleaner look */
+/* Contact info bottom-right of header */
+.contact-info {
+    text-align: right;
+    font-size: 0.9rem;
 }
 
-/* =================== Submit Button =================== */
+/* ===== Form Layout Using Flexbox ===== */
+.form-section {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* vertical layout */
+    gap: 10px; /* spacing between form elements */
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
 button {
-    margin-top: 20px;
-    padding: 12px 20px;
-    font-size: 1em;
-    background-color: #00b4d8;
-    color: white;
+    padding: 10px;
+    font-size: 1rem;
     border: none;
+    background: #444;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
-
-button:hover {
-    background-color: #0096c7;
-}
-
-/* =================== Footer / Notes =================== */
-/* Each section has been given margin and padding to illustrate the box model's spacing effects */
-
