@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital CV - Flexbox Edition</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flynn Greenlee - Digital CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="header">
-    <img src="Flynn-selfie.jpg" alt="Profile Picture" class="profile-pic" />
-    <h1 class="name">Flynn Greenlee</h1>
-    <div class="contact-info">
-        <p>Email: Sgreenlee2022@gmail.com</p>
-        <p>Phone: 410-804-3451</p>
+    <div class="header">
+        <img src="Flynn selfie.jpg" alt="Profile Picture" class="profile-pic">
+        <h1 class="name">Flynn Greenlee</h1>
+        <div class="contact-info">
+            <p><strong>Email:</strong> sgreenlee2022@gmail.com</p>
+            <p><strong>Phone:</strong> 410-804-3451</p>
+            <p><strong>Location:</strong> Edgewater, Maryland</p>
+        </div>
     </div>
-</div>
 
-<section class="form-section">
-    <h2>Contact Me</h2>
-    <form>
-        <label>Name</label>
-        <input type="text" />
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>South River Highschool</strong> – Edgewater, Maryland</p>
+        <p>2019 – 2022</p>
+        <ul>
+            <li>Subjects: Math, Science, English, History, etc.</li>
+            <li>Achievements: Honor Roll</li>
+        </ul>
+    </div>
 
-        <label>Email</label>
-        <input type="email" />
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, Photoshop, Unity, Blender</li>
+            <li>Microsoft Word, PowerPoint</li>
+            <li>Teamwork and Communication</li>
+        </ul>
+    </div>
 
-        <label>Message</label>
-        <textarea></textarea>
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Website Project:</strong> Created a basic website using HTML for a class project.</li>
+        </ul>
+    </div>
 
-        <button type="submit">Send</button>
-    </form>
-</section>
+    <div class="section">
+        <h2>Interests</h2>
+        <ul>
+            <li>Manga</li>
+            <li>Gaming</li>
+            <li>Coding</li>
+        </ul>
+    </div>
 
+    <div class="form-section">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Reason for Contact:</label>
+            <input type="text" placeholder="Job offer, collaboration, etc." required>
+
+            <label>Message:</label>
+            <textarea placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </body>
 </html>
